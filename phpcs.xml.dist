@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="ZenesisDemo">
+  <description>WP coding standards for this plugin</description>
+
+  <file>./</file>
+  <exclude-pattern>./vendor/*</exclude-pattern>
+  <exclude-pattern>./.github/*</exclude-pattern>
+
+  <arg name="basepath" value="."/>
+  <arg name="extensions" value="php"/>
+
+  <!-- WordPress rules -->
+  <rule ref="WordPress"/>
+  <rule ref="WordPress-Docs"/>
+  <rule ref="WordPress-Extra"/>
+
+  <!-- PHP compatibility (adjust to your target) -->
+  <config name="testVersion" value="8.1-"/>
+
+  <!-- WP-compatible compatibility set -->
+  <rule ref="PHPCompatibilityWP"/>
+</ruleset>
+

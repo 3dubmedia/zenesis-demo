@@ -1,0 +1,17 @@
+includes:
+  - vendor/szepeviktor/phpstan-wordpress/extension.neon
+
+parameters:
+  level: 5
+
+  paths:
+    - zenesis-demo.php
+
+  excludePaths:
+    analyse:
+      - vendor/*
+      - .github/*
+
+  # Use stubs so WP globals (add_action, __, etc.) resolve
+  stubFiles:
+    - vendor/php-stubs/wordpress-stubs/wordpress-stubs.php
