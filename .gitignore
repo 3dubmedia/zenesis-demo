@@ -1,0 +1,16 @@
+# Composer
+/vendor/
+/composer.lock
+
+# PHPStan cache
+.phpstan-cache/
+/var/phpstan/
+/tmp/phpstan/
+
+# Node (if you add tooling later)
+/node_modules/
+
+# OS/Editor
+.DS_Store
+.idea/
+.vscode/
